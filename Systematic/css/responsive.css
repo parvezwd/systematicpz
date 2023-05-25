@@ -1,0 +1,46 @@
+
+/* tablet layout */
+@media only screen and (max-width: 991px){
+
+	.inner_main_menu {background: none; min-height: 0px;}
+	.inner_main_menu::after {display: none;}
+	.mean-container .mean-nav { margin-top: 0; width: 90%;}
+	.hero_area h2 { font-size: 40px;}
+	.inner_main_header { padding: 20px 0;}
+	.social_area { margin-top: 14px;}
+	.child_work { width: 31%;}
+	.child_work:first-child { margin-right: 3%;}
+	.child_footer {margin-top: 40px; padding: 0 1%; width: 47%;}
+	.footer_area { padding: 0px 0;}
+
+
+/* mini mobile menu was 1 line. converted it to 3 line  */
+	.mean-container a.meanmenu-reveal span { height: 15px; margin-top: 3px; position: relative;}
+	.mean-container a.meanmenu-reveal span:after { content: ''; position: absolute; width: 22px;
+		height: 3px; background: black; top: 3px; left: 0px;}
+	.mean-container a.meanmenu-reveal span span:after { content: ''; position: absolute;
+		width: 22px; height: 3px; background: black; top: 9px; left: 0px;}
+
+}
+
+/* mobile layout */
+@media only screen and (max-width: 480px){
+
+	.mini_menu { width: 100%; float: left; margin-bottom: 12px;}
+	.mini_menu ul, .social_area ul { text-align: center;}
+	.mini_menu ul li:first-child::after { content: '';width: 0;height: 0;}
+	.search_area, .logo_area {width: 200px; float: none; margin: 0 auto;}
+	.social_area { float: none;}
+	.social_area ul li { display: inline-block; margin: 0px 6px;}
+	.hero_area img { float: none;}
+	.hero_area h2{ font-size: 25px; margin-top: 10px; text-align: center;}
+	.hero_area a { margin-bottom: 10px;}
+	.child_work { width: 100%; margin: 0px;}
+	.child_work h2 { margin: 30px 0px;}
+	.child_footer { padding: 0; width: 100%; margin: 15px 0px;}
+	.left_copyright { width: 100%; float: none; text-align:center;}
+	.right_copyright { width: 100%; float: none; text-align:center;}
+	.copyright_area { padding: 10px 0 0 0;}
+	.copyright_area p { font-size: 14px; margin: 5px 0px;}
+
+}
